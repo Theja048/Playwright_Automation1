@@ -17,7 +17,7 @@ test("test", async ({ page }) => {
 
 	await test.step("validate error message", async () => {
 		await expect(page.locator("#email_container")).toContainText(
-			"email you entered isn't connected to an account. Find your account and log in."
+			"The email address or mobile number you entered isn't connected to an account. Find your account and log in."
 		);
 	});
 });
